@@ -2579,9 +2579,6 @@ h1.page-title + .tag-cloud-list {
   text-align: left;
 }
 #aside-content {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
   width: 26%;
 }
 @media screen and (min-width: 900px) {
@@ -2603,18 +2600,10 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #aside-content .card-widget {
-  opacity: 0.85;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-  filter: alpha(opacity=85);
   position: relative;
   overflow: hidden;
   margin-top: 20px;
   padding: 20px 24px;
-}
-#aside-content .card-info {
-  opacity: 0.85;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-  filter: alpha(opacity=85);
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
@@ -3308,6 +3297,15 @@ h1.page-title + .tag-cloud-list {
 #post-comment .comment-wrap > div:nth-child(2) {
   display: none;
 }
+#footer {
+  position: relative;
+  background: #49b1f5;
+  background-attachment: scroll;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 #footer-wrap {
   position: relative;
   padding: 40px 20px;
@@ -3332,6 +3330,7 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
+  background-color: #49b1f5;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3347,10 +3346,11 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgba(0,0,0,0.3);
   content: '';
 }
 #page-header.full_page {
-  height: 100vh;
+  height: 600px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
@@ -3442,7 +3442,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header.post-bg:before {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.5);
 }
 #page-header #post-info {
   position: absolute;
@@ -4228,11 +4228,6 @@ h1.page-title + .tag-cloud-list {
   margin-top: 40px;
   width: 100%;
   background: #000;
-}
-.layout > .recent-posts {
-  opacity: 0.85;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-  filter: alpha(opacity=85);
 }
 .layout > .recent-posts .pagination > * {
   display: inline-block;
